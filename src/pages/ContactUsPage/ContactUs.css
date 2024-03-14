@@ -1,0 +1,47 @@
+.contact-info {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  margin: auto;
+}
+
+.contact-info .left {
+  padding-left: 40px;
+}
+.contact-info .left ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.contact-info .left ul li p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-info .right form {
+  width: 100%;
+}
+
+.contact-info .right form > * {
+  width: 100%;
+}
+.contact-info .right form button {
+  height: 40px;
+  color: white;
+  background-color: #29335c;
+  cursor: pointer;
+}
+.contact-info .right form div input,
+textarea {
+  width: 100%;
+  height: 40px;
+}
+.contact-info .right form div textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+@media only screen and (max-width: 767px) {
+  .contact-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

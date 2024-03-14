@@ -1,0 +1,71 @@
+.home {
+  width: 100%;
+  background-color: red;
+}
+.description-section .description {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  height: 400px;
+}
+
+.description-section .description .overlay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  position: relative;
+}
+
+.description-section .description .overlay .design {
+  border: 7px solid blue;
+  width: 90%;
+  height: 400px;
+  position: absolute;
+  z-index: 1;
+}
+.description-section .description .overlay .img-div {
+  width: 90%;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 40px;
+}
+
+.description-section .description .overlay .img-div img {
+  width: 100%;
+}
+.description-section .description .text {
+  padding: 20px;
+}
+.description-section .description .text a {
+  border: 1px solid #48c9b0;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #054b3c;
+  border-radius: 50px;
+}
+.description-section .description .text a:hover {
+  background-color: #054b3c;
+  color: white;
+  border: 1px solid #054b3c;
+}
+.description-section .description .text h1 {
+  font-size: 40px;
+}
+.description-section .description .text p {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .description-section .description {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .description-section .description .overlay .design {
+    display: none;
+  }
+  .description-section .description .overlay .img-div {
+    display: none;
+  }
+}
